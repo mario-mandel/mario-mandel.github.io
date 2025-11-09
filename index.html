@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Mandel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .intro {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .intro h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        .posts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .post-card {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .post-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+
+        .post-card .tag {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+        }
+
+        .post-card h3 {
+            color: #333;
+            margin-bottom: 0.75rem;
+            font-size: 1.5rem;
+        }
+
+        .post-card p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .post-card .meta {
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        .read-more {
+            color: #667eea;
+            font-weight: 600;
+            margin-top: 1rem;
+            display: inline-block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            margin-top: 3rem;
+        }
+
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            .posts-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mario Mandel</h1>
+        <p>Developer • Learner • Builder</p>
+    </header>
+
+    <div class="container">
+        <section class="intro">
+            <h2>👋 Hey there!</h2>
+            <p>I'm Mario, and this is where I document what I'm learning and building. I believe in learning in public and sharing knowledge. You'll find tutorials, project documentation, and experiments here.</p>
+            <p style="margin-top: 1rem;">Everything here is practical, hands-on, and built from real experience.</p>
+        </section>
+
+        <h2 style="margin-bottom: 1.5rem; color: #333;">🚀 Projects & Tutorials</h2>
+        
+        <div class="posts-grid">
+            <a href="docker-week1.html" class="post-card">
+                <span class="tag">Docker</span>
+                <h3>Docker Mastery - Week 1</h3>
+                <p>Complete 7-day learning plan to go from zero to building containerized applications. Includes hands-on exercises, real Dockerfiles, and a full-stack project.</p>
+                <div class="meta">7-day plan • Beginner to Intermediate</div>
+                <span class="read-more">Read Tutorial →</span>
+            </a>
+
+            <!-- Placeholder for future posts -->
+            <div class="post-card" style="opacity: 0.6; cursor: default; border: 2px dashed #ddd;">
+                <span class="tag">Coming Soon</span>
+                <h3>Your Next Tutorial</h3>
+                <p>More learning content coming soon! Check back later for new tutorials and projects.</p>
+                <div class="meta">Stay tuned</div>
+            </div>
+
+            <div class="post-card" style="opacity: 0.6; cursor: default; border: 2px dashed #ddd;">
+                <span class="tag">Coming Soon</span>
+                <h3>Future Project</h3>
+                <p>Building something awesome? Document it here and share your learning journey!</p>
+                <div class="meta">Stay tuned</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Built with ❤️ for learning in public</p>
+        <p style="margin-top: 0.5rem;">
+            <a href="https://github.com/mario-mandel" target="_blank">GitHub</a> • 
+            <a href="mailto:your.email@example.com">Contact</a>
+        </p>
+    </footer>
+</body>
+</html>
