@@ -4,7 +4,7 @@ A personal learning hub for documenting technical tutorials, projects, and learn
 
 ## 🌟 Live Site
 
-Visit the site at: `https://yourusername.github.io/dev-learning-hub/`
+Visit the site at: `https://mario-mandel.github.io/dev-learning-hub/`
 
 (Replace with your actual GitHub Pages URL after deployment)
 
